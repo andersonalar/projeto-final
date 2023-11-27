@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
+    background: var(--gradients-bg-1, linear-gradient(122deg, #ACC5A1 10.89%, #F3E778 90.9%));
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    height: 10vh;
+}
+
+.logo {
+    font-family: Poppins;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 86%;
+    /* 17.2px */
+    letter-spacing: 2.6px;
+    width: 129px;
+    height: 42px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555845;
+}
+
+span {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#home {
+    height: 90vh;
+}
+
+.about {
+    width: 35%;
+    margin-top: 8%;
+    margin-left: 10%;
+    float: left;
+}
+
+.about p {
+    font-size: 15px;
+    margin-top: -30px;
+}
+
+.about h1 {
+    font-size: 30px;
+}
+
+.image {
+    width: 35%;
+    float: right;
+    margin-right: 10%;
+}
+
+.image img {
+    height: 94.7vh;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#servicos {
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+}
+
+.service-info .slide {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+.service-info .slide img {
+    width: 50px;
+}
+
+.service {
+    display: flex;
+    margin-top: 20px;
+}
+
+#servicos p {
+    margin-left: 10%;
+}
+
+.service img {
+    width: 200px;
+    height: 200px;
+    margin-left: 10%;
+}
+
+.service-info {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.service-info h3 {
+    font-size: 22px;
+    margin-left: 10%;
+}
+
+.service-info span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#funcionarios {
+    height: 100vh;
+    width: 100%;
+    margin-left: 4%;
+}
+
+.employees {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.employee {
+    width: 350px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.employee img {
+    width: 80%;
+}
+
+.employee-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.employee:hover .employee-info {
+    opacity: 1;
+}
+
+#agendamentos {
+    background-color: #fff;
+    padding: 20px;
+    height: 100vh;
+    text-align: center;
+}
+
+.appointment-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section {
+    text-align: left;
+    width: 50%;
+    margin-left: 10%;
+}
+
+.left-section p {
+    font-size: 20px;
+    width: 50%;
+}
+
+.calendar {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.button-cancelar {
+    background-color: #F0FFCC;
+    font-family: "Poppins";
+    font-weight: 600;
+    color: black;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 23px;
+    border: 2px solid #95A08F;
+}
+
+.button-suporte {
+    margin-top: 10px;
+    background-color: #F3E778;
+    color: black;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    width: 30%;
+    font-family: "Poppins";
+    font-weight: 600;
+    border-radius: 23px;
+    border: 2px solid #95A08F;
+}
+
+.right-section {
+    text-align: left;
+    width: 50%;
+
+}
+
+form {
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+form input,
+form select {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    background: #F3E778;
+    border: none;
+    height: 25px;
+}
+
+.btn-agendar {
+    background-color: #F0FFCC;
+    font-family: "Poppins";
+    font-weight: 600;
+    color: black;
+    padding: 10px 10px;
+    cursor: pointer;
+    width: 35%;
+    border-radius: 23px;
+    border: 2px solid #95A08F;
+    margin-left: 30%;
+}
+
+.btn-agendar:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+.calendar {
+    border: 1px solid #ccc;
+    max-width: 300px;
+    height: 280px;
+    width: 100%;
+    background-color: #ACC5A1;
+}
+
+.month h2 {
+    background-color: #ACC5A1;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.weekdays {
+    display: flex;
+    background-color: #ACC5A1;
+    color: #fff;
+    font-weight: 400;
+}
+
+.weekdays div {
+    flex: 1;
+    text-align: center;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    background-color: #ACC5A1;
+    color: #fff;
+}
+
+.day {
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+#contatos {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-nome {
+    border-radius: 5px;
+    background: #F0FFCC;
+    border: none;
+    width: 324px;
+    height: 35px;
+}
+
+.input-email {
+    border-radius: 5px;
+    background: #F0FFCC;
+    border: none;
+    width: 324px;
+    height: 35px;
+}
+
+.input-assunto {
+    border-radius: 5px;
+    background: #F0FFCC;
+    border: none;
+    width: 324px;
+    height: 70px;
+}
+
+.button-suporte2 {
+    margin-top: 10px;
+    background-color: #F3E778;
+    color: black;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-family: "Poppins";
+    font-weight: 600;
+    border-radius: 23px;
+    border: 2px solid #95A08F;
+    width: 15%;
+}
+
+.btn-enviar {
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 60px;
+    border: 2px solid #95A08F;
+    background: #F0FFCC;
+}
+
+footer {
+    background-color: #F0FFCC;
+    height: 5vh;
+}
+
+footer p {
+    color: #717171;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p span {
+    font-size: 16px
+}
+
+
+
+
+
+/*mobile*/
+@media screen and ( max-width:390px)
+{
+nav{
+    display: none;
+width: 100%;
+height: 100px;
+
+}
+ul{
+display: flex;
+justify-content: space-evenly;
+
+
+}
+main{
+width: 100%;
+
+
+
+}
+
+main p{
+width: 150px;
+
+
+}
+aside{
+    width: 100%;
+    display: flex;
+    height: 200px;
+}
+p{
+font: 1.1em 'avenir',sans-serif;
+
+
+
+}
+div{
+width: 30%;
+    margin-right:10PX; 
+}
+.image img {
+ width: 200px;
+
+
+}
+
+.about {
+width: 100px;
+
+}
+#servicos{
+width: 500px;
+
+
+}
+.service img{
+width: 50px;
+height: 50px;
+
+
+}
+#funcionarios{
+width: 500px;
+
+
+}
+#funcionarios h2{
+    
+width: 7em;
+text-align: right;
+
+
+}
+#agendamentos{
+
+
+
+}
+#agendamentos h2{
+width: 6em;
+
+
+
+}
+.calendar{
+    display: none;
+
+width: 150px;
+height: 150px;
+
+
+}
+
+#appointment-section{
+    display: none;
+width: 500px;
+height: 500px;
+
+
+}
+.left-section{
+display: none;
+
+}
+#contatos{
+    display: none;
+    text-align: left;
+}
+
+#contatos h2{
+width: 1em;
+text-align: right;
+}
+
+
+
+
+}
